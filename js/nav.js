@@ -13,3 +13,31 @@ cross.addEventListener("click", function closeNav() {
     hamburger.style.display = "block";
     nav.style.width = 0;
 })
+
+// if(window.matchMedia("(min-width: 1024px)")) {
+//     nav.style.width = "40%";
+// } else {
+//     nav.style.width = 0;
+// }
+
+// if(window.innerWidth > 1023 || document.documentElement.clientWidth > 1023) {
+//     nav.style.width = "40%";
+// } else {
+//     nav.style.width = 0;
+// }
+
+const breakpoint = window.matchMedia("(min-width: 1024px)");
+
+function checkWindowSize(breakpoint) {
+    if(breakpoint.matches) {
+        nav.style.width = "500px";
+        hamburger.style.display = "none";
+        cross.style.display = "none";
+    } else {
+        nav.style.width = 0;
+        hamburger.style.display = "block";
+    }
+}
+
+checkWindowSize(breakpoint);
+breakpoint.addListener(checkWindowSize)

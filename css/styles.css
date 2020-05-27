@@ -88,6 +88,7 @@ p {
 --------------------*/
 header {
 	position: relative;
+	padding: 24px
 }
 
 .header_content {
@@ -186,6 +187,10 @@ footer {
 
 .about_img {
 	border-radius: 5px;
+}
+
+#logo {
+	width: 250px;
 }
 
 
@@ -632,7 +637,7 @@ footer {
 	.header_content p, .header_content h1 {
 		font-size: 32px;
 		width: 45vw;
-		margin: 0 15px 15px 15px;
+		margin-left: 16px;
 	}
 
 	.col_img {
@@ -751,7 +756,7 @@ footer {
 		top: 0;
 		right: 0;
 		padding-top: 0;
-		width: 40%;
+		width: 500px;
 		background: none;
 		flex-direction: row;
 		box-shadow: none;
@@ -820,9 +825,9 @@ footer {
 		padding: 15px 15px 0 15px;
 	}
 	
-	#logo {
+	/* #logo {
 		width: 250px;
-	}
+	} */
 	
 	.col_img {
 		/* border-radius: 5%; */
