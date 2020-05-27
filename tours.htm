@@ -16,11 +16,15 @@
 	</head>
 	<body id="tours">
 		<header role="banner" class="clearfix">
-			<nav role="navigation" class="mainnav">
-				<a href="index.htm">Home</a>
-				<a href="tours.htm" id="active">Tours</a>
-				<a href="about.htm">About</a>
-				<a href="contact.htm">Contact</a>
+			<nav role="navigation" >
+				<i class="fas fa-bars" id="hamburger"></i>
+				<i class="fas fa-times" id="cross"></i>
+				<div class="mainnav">
+					<a class="nav_item" href="index.htm">Home</a>
+					<a class="nav_item" href="tours.htm">Tours</a>
+					<a class="nav_item" href="about.htm">About</a>
+					<a class="nav_item" href="contact.htm" id="active">Contact</a>
+				</div>
 			</nav>
 			<div class="header" id="tours_header">
 				<img class="header_content" id="logo" src="images/logo.svg" width="150px" height="auto" alt="logo">
@@ -101,5 +105,6 @@
 				<p id="copyright">Re-cycle &copy; 2020. Illustrations by <a href="https://www.freepik.com/katemangostar">katemangostar</a></p>
 			</section>
 		</footer>
+		<script src="./js/nav.js"></script>
 	</body>
 </html>
