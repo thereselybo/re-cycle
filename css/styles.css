@@ -750,9 +750,11 @@ footer {
 		position: absolute;
 		top: 0;
 		right: 0;
+		padding-top: 0;
 		width: 40%;
 		background: none;
 		flex-direction: row;
+		box-shadow: none;
 		/* float: right; */
 	}
 	
@@ -760,9 +762,10 @@ footer {
 		margin: 10px;
 	}
 
-	#hamburger {
+	#hamburger, #cross {
 		display: none;
 	}
+
 	
 	/* #home_header {
 		background: url(../images/home_header_resp.svg) no-repeat;
