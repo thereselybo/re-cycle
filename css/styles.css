@@ -59,6 +59,14 @@ p {
 	transition: all ease-in .2s;
 }
 
+#hamburger:hover {
+	cursor: pointer;
+}
+
+#cross:hover {
+	cursor: pointer;
+}
+
 .footnav a{
 	text-decoration: none;
 	color: white;
@@ -834,7 +842,7 @@ footer .col_1 {
 	}
 	
 	footer .col_container {
-		width: 70%;
+		width: 60%;
 		margin: 0 auto;
 	}
 	
