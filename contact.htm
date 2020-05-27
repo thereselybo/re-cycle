@@ -47,25 +47,26 @@
 						<div class="col_2 inside_container">
 							<div class="col_1 inside_col">
 								<h2>Contact form</h2>
-								<form action="contact.htm" method="get">
-							<fieldset id="contact_form">
-								<input type="text" name="firstname" id="firstName" placeholder="First name">
-								<div class="inputError" id="firstNameError">Please enter your first name</div>
+								<form action="contact.htm" id="contact_form">
+									<!-- <fieldset > -->
+										<input type="text" name="firstname" id="firstName" placeholder="First name">
+										<div class="inputError" id="firstNameError">Please enter your first name</div>
 
-								<input type="text" name="lastname" id="lastName" placeholder="Last name">
-								<div class="inputError" id="lastNameError">Please enter your last name</div>
+										<input type="text" name="lastname" id="lastName" placeholder="Last name">
+										<div class="inputError" id="lastNameError">Please enter your last name</div>
 
-								<input type="email" name ="email" id="email" placeholder="Email address">
-								<div class="inputError" id="noEmailError">Please enter your email address</div>
-								<div class="inputError" id="invalidEmailError">Please enter a valid email address</div>
+										<input type="email" name="email" id="email" placeholder="Email address">
+										<div class="inputError" id="noEmailError">Please enter your email address</div>
+										<div class="inputError" id="invalidEmailError">Please enter a valid email address</div>
 
-								<textarea required="required" name="message" rows="3" id="message" placeholder="Your message"></textarea>
-								<div class="inputError" id="messageError">Please enter your message</div>
-								<div class="validated" id="formValidated">Thank you for your message</div>
+										<textarea name="message" rows="3" id="message" placeholder="Your message"></textarea>
+										<div class="inputError" id="messageError">Please enter your message</div>
 
-								<input type="submit" id="send" class="contact_btn btn" value="Send message">
-							</fieldset>
-						</form>
+										<div class="validated" id="formValidated">Thank you for your message</div>
+
+										<input type="submit" id="send" class="contact_btn btn" value="Send message">
+									<!-- </fieldset> -->
+								</form>
 							</div>
 						</div>
 					</div>
@@ -137,5 +138,6 @@
 			</section>
 		</footer>
 		<script src="./js/nav.js"></script>
+		<script src="./js/contact.js"></script>
 	</body>
 </html>
