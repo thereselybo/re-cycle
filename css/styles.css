@@ -86,7 +86,6 @@ p {
 --------------------*/
 header {
 	position: relative;
-	padding: 24px
 }
 
 .header_content {
@@ -107,13 +106,6 @@ footer {
 
 footer .col_1 {
 	flex: 1;
-}
-
-.footer {
-	position: absolute;
-	bottom: 35%;
-	left: 50%;
-	transform: translate(-50%, 50%);
 }
 
 .footer h3 {
@@ -405,11 +397,19 @@ footer .col_1 {
 	}
 
 	footer {
-		height: 250px
+		height: 400px;
+		background: url(../images/footer_bg_mobile.svg);
+		background-size: cover;
 	}
 
 	.footer {
-		width: 90vw;
+		width: 70vw;
+		margin: 0 auto;
+		padding-top: 48px;
+	}
+
+	.footer .col_container {
+		flex-direction: column;
 	}
 
 	.footer .col_1:first-child {
@@ -418,6 +418,10 @@ footer .col_1 {
 	
 	#home, #tours, #about, #contact {
 		background-position: 0 110px;
+	}
+
+	header {
+		padding: 16px 16px 24px 16px;
 	}
 	
 
@@ -435,15 +439,24 @@ footer .col_1 {
 	}
 
 	.content {
-		width: 80vw;
+		width: 90vw;
 		margin-left: auto;
 		margin-right: auto;
+	}
+
+	.content.index {
+		text-align: center;
 	}
 	
 	.col_img {
 		border-radius: 50%;
 		height: auto;
 		width: 100px;
+		/* position: absolute;
+		top: 50%;
+		right: 0;
+		transform: translateY(-50px); */
+		border-radius: 50%;
 	}
 	
 	.index .col_container {
@@ -453,22 +466,23 @@ footer .col_1 {
 	
 	.index .inside_container {
 		display: flex;
-		flex-direction: row;
+		flex-direction: column;
 		margin: 24px 0;
 	}
 	
 	.col_wide {
-		margin-left: 24px;
-		flex: 3;
+		/* margin-left: 24px; */
+		flex: 1;
 	}
 	
 	.col_narrow {
-		margin: 20px 0 20px 10px;
+		margin: 20px 0;
 		flex: 1;
 	}
 	
 	.index .btn {
 		display: block;
+		margin: 0 auto;
 	}
 
 	.btn:active {
@@ -487,6 +501,10 @@ footer .col_1 {
 	
 	.about * {
 		flex-direction: column;
+	}
+
+	.about .inside_container {
+		margin-bottom: 16px;
 	}
 	
 	.contact * {
@@ -511,6 +529,10 @@ footer .col_1 {
 	.mainnav a {
 		padding: 3%;
 	}
+
+	header {
+		padding: 24px;
+	}
 	
 	.header {
 		height: 52vw;
@@ -525,25 +547,44 @@ footer .col_1 {
 		width: 30vw;
 	}
 
+	footer {
+		height: 250px;
+		background: url(../images/footer_bg.svg);
+		background-size: cover;
+	}
+
 	.footer {
 		width: 80vw;
+		position: absolute;
+		bottom: 35%;
+		left: 50%;
+		transform: translate(-50%, 50%);
+		padding-top: 0;
+	}
+
+	.footer .col_container {
+		flex-direction: row;
 	}
 
 	footer .col_1{
-		padding: 0 8px;
-		
+		padding: 0 8px;	
 	}
 
 	.col_img {
 		border-radius: 50%;
 		height: auto;
 		width: 100px;
-		
+		position: relative;
+		top: 0;
 	}
 	
 	.content .col_container {
 		display: flex;
 		flex-direction: column;
+	}
+
+	.content.index {
+		text-align: center;
 	}
 
 	.index .col_container {
@@ -575,7 +616,7 @@ footer .col_1 {
 	
 	.index .btn {
 		display: block;
-		margin: 0 auto;
+		/* margin: 0 auto; */
 		position: absolute;
 		bottom: 0;
 		left: 50%;
