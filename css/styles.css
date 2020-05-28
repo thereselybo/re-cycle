@@ -426,7 +426,7 @@ footer .col_1 {
 	
 
 	.header {
-		height: 60vw;
+		height: 65vw;
 	}
 	
 	.header_content {
@@ -452,10 +452,6 @@ footer .col_1 {
 		border-radius: 50%;
 		height: auto;
 		width: 100px;
-		/* position: absolute;
-		top: 50%;
-		right: 0;
-		transform: translateY(-50px); */
 		border-radius: 50%;
 	}
 	
@@ -471,7 +467,6 @@ footer .col_1 {
 	}
 	
 	.col_wide {
-		/* margin-left: 24px; */
 		flex: 1;
 	}
 	
@@ -616,7 +611,6 @@ footer .col_1 {
 	
 	.index .btn {
 		display: block;
-		/* margin: 0 auto; */
 		position: absolute;
 		bottom: 0;
 		left: 50%;
