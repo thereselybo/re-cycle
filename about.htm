@@ -15,7 +15,12 @@
 		<title>Re-cycle - About us</title>
 	</head>
 	<body id="about">
-		<header role="banner">
+		<div id="spin-container">
+			<div id="spinner">
+				<i class="fas fa-circle-notch fa-spin"></i>
+			</div>
+		</div>
+		<header role="banner" class="invisible">
 			<nav role="navigation" >
 				<i class="fas fa-bars" id="hamburger"></i>
 				<i class="fas fa-times" id="cross"></i>
@@ -33,7 +38,7 @@
 				</div>
 			</div>
 		</header>
-		<main role="main">
+		<main role="main" class="invisible">
 			<section class="content about">
 				<h1>About us</h1>
 				<section class="col_container">
@@ -63,7 +68,7 @@
 				</section>
 			</section>
 		</main>
-		<footer role="contentinfo" class="footnav">
+		<footer role="contentinfo" class="footnav invisible">
 			<section class="footer">
 				<div class="col_container">
 					<div class="col_1">
@@ -95,6 +100,7 @@
 				<p id="copyright">Re-cycle &copy; 2020. Illustrations by <a href="https://www.freepik.com/katemangostar">katemangostar</a></p>
 			</section>
 		</footer>
+		<script src="./js/fadein.js"></script>
 		<script src="./js/nav.js"></script>
 	</body>
 </html>
