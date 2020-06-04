@@ -3,100 +3,145 @@
 <html lang="en">
 	<head>
 		<meta charset="utf-8">
-		<meta name="description" content="Eco-friendly cycling tours in Oslo">
-		<meta name="keywords" content="eco-friendly, environmental, green, cycling, cycling tours, sightseeing, family friendly">
+		<meta name="description" content="Eco-friendly cycling tours in Oslo. We would love to hear from you by phone, email or by our contact form">
+		<meta name="keywords" content="eco-friendly, environmental, green, cycling, cycling tours, sightseeing, family friendly, cycling Oslo, cycling tours Oslo">
 		<meta name="author" content="Therese Lybo">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<link rel="stylesheet" type="text/css" href="css/styles.css">
+		<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="./css/styles.css">
 		<link href="https://fonts.googleapis.com/css?family=PT+Serif&display=swap" rel="stylesheet">
 		<script src="https://kit.fontawesome.com/1f3ab86c3a.js"></script>
-		<title>Re-cycle</title>
+		<link rel="icon" type="image/png" href="./images/favicon.svg">
+		<title>Re-cycle - Contact</title>
 	</head>
-	<body>
-		<header role="banner">
-			<nav role="navigation" class="mainnav">
-				<a href="index.htm">Home</a>
-				<a href="tours.htm">Tours</a>
-				<a href="about.htm">About</a>
-				<a href="contact.htm" id="active">Contact</a>
+	<body id="contact">
+		<div id="spin-container">
+			<div id="spinner">
+				<i class="fas fa-circle-notch fa-spin"></i>
+			</div>
+		</div>
+		<header role="banner" class="invisible">
+			<nav role="navigation" >
+				<i class="fas fa-bars" id="hamburger"></i>
+				<i class="fas fa-times" id="cross"></i>
+				<div class="mainnav">
+					<a class="nav_item" href="./index.htm">Home</a>
+					<a class="nav_item" href="./tours.htm">Tours</a>
+					<a class="nav_item" href="./about.htm">About</a>
+					<a class="nav_item" href="./contact.htm" id="active">Contact</a>
+				</div>
 			</nav>
 			<div class="header" id="contact_header">
-				<img class="header_content" id="logo" src="images/logo.svg" width="150px" height="auto" alt="logo">
+				<a href="./index.htm"><img class="header_content" id="logo" src="./images/logo.svg" alt="logo"></a>
 				<div class="header_content">
-					<h1><em>We would love to hear from you!</em></h1>
+					<p>We would love to hear from you!</p>
 				</div>
 			</div>
 		</header>
-		<main role="main">
+		<main role="main" class="invisible">
 			<section class="content contact">
-				<h1><em>Contact</em></h1>
+				<h1>Contact</h1>
 				<section class="col_container">
-					<div class="col_1 inside_container">
-						<div class="col_1 inside_col">
-							<h2>Contact info</h2>
-							<i class="fas fa-phone-alt" title="Give us a call"></i>+47 123 45 678<br>
-							<a href="mailto:#" title="Send us an e-mail"><i class="fas fa-envelope"></i>re@cycle.no</a><br>
-							<a href="https://goo.gl/maps/7y5r3mLvv85SsVQF7" title="Find us on Google Maps"><i class="fas fa-map-marker-alt"></i>Jernbanetorget 1, 0154 Oslo</a>
+					<div class="row">
+						<div class="col_1 inside_container">
+							<div class="col_2 inside_col">
+								<h2>Find us</h2>
+								<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2000.2902255871031!2d10.749207315774747!3d59.91073058186604!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46416e8a1a7b8c3d%3A0xc64b798e4a64a890!2sJernbanetorget%201%2C%200154%20Oslo!5e0!3m2!1sno!2sno!4v1566759431345!5m2!1sno!2sno" width="400" height="350" frameborder="0" style="border:0;" allowfullscreen="" class="find_us"></iframe>
+							</div>
 						</div>
-						<div class="col_2 inside_col">
-							<h2>Find us</h2>
-							<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2000.2902255871031!2d10.749207315774747!3d59.91073058186604!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46416e8a1a7b8c3d%3A0xc64b798e4a64a890!2sJernbanetorget%201%2C%200154%20Oslo!5e0!3m2!1sno!2sno!4v1566759431345!5m2!1sno!2sno" width="400" height="350" frameborder="0" style="border:0;" allowfullscreen="" class="find_us"></iframe>
+						<div class="col_2 inside_container">
+							<div class="col_1 inside_col">
+								<h2>Contact form</h2>
+								<form action="contact.htm" id="contact_form">
+										<input type="text" name="firstname" id="firstName" placeholder="First name">
+										<div class="inputError" id="firstNameError">Please enter your first name</div>
+
+										<input type="text" name="lastname" id="lastName" placeholder="Last name">
+										<div class="inputError" id="lastNameError">Please enter your last name</div>
+
+										<input type="text" name="email" id="email" placeholder="Email address">
+										<div class="inputError" id="noEmailError">Please enter your email address</div>
+										<div class="inputError" id="invalidEmailError">Please enter a valid email address</div>
+
+										<textarea name="message" rows="3" id="message" placeholder="Your message"></textarea>
+										<div class="inputError" id="messageError">Please enter your message</div>
+
+										<div class="validated" id="formValidated">Thank you for your message</div>
+
+										<input type="submit" id="send" class="contact_btn btn" value="Send message">
+								</form>
+							</div>
 						</div>
 					</div>
-					<div class="col_2 inside_container">
-						<div class="col_1 inside_col">
-							<h2>Contact form</h2>
-							<form action="contact.htm" method="get">
-						<fieldset id="contact_form">
-							<section>
-								<h3 id="firstname">First name:</h3>
-								<input type="text" name="firstname" required="required">
-								<h3 id="lastname">Last name:</h3>
-								<input type="text" name="lastname" required="required">
-								<h3 id="email">Email address:</h3>
-								<input type="email" name ="email" required="required">
-								<h3 id="phone">Phone number:</h3>
-								<input type="text" name="phone" required="required">
-								<h3 id="message">Your message:</h3>
-								<textarea required="required" name="message"></textarea>
-							</section>
-							<input type="submit" id="send" class="contact_btn btn" value="Send message" />
-						</fieldset>
-					</form>
+					
+					<div class="row inside_container">
+						<h2>Contact info</h2>
+						<div class="col_1 inside_col" id="contact_info">
+								
+							<div class="col_1">
+								<i class="fas fa-phone-alt" title="Give us a call"></i>
+								<ul>
+									<li><h3>Phone</h3></li>
+									<li><span>+47 123 45 678</span></li>
+								</ul>
+							</div>
+							<div class="col_1">
+								<a href="mailto:#" title="Send us an e-mail">
+									<i class="fas fa-envelope"></i>
+									<ul>
+										<li><h3>Email</h3></li>
+										<li><span>re@cycle.no</span></li>
+									</ul>	
+								</a>
+							</div>
+							<div class="col_1">
+								<a href="https://goo.gl/maps/7y5r3mLvv85SsVQF7" title="Find us on Google Maps">
+									<i class="fas fa-map-marker-alt"></i>
+									<ul>
+										<li><h3>Location</h3></li>
+										<li><span>Jernbanetorget 1, 0154 Oslo</span></li>
+									</ul>
+								</a>
+							</div>
 						</div>
 					</div>
 				</section>
 			</section>
 		</main>
-		<footer role="contentinfo" class="footnav">
-			<div class="col_container">
-				<div class="col_1">
-					<h4>Contact us</h4>
-					<p>
-						<i class="fas fa-phone-alt" title="Give us a call"></i>+47 123 45 678<br>
-						<a href="mailto:#" title="Send us an e-mail"><i class="fas fa-envelope"></i>re@cycle.no</a><br>
-						<a href="https://goo.gl/maps/7y5r3mLvv85SsVQF7" title="Find us on Google Maps"><i class="fas fa-map-marker-alt"></i>Jernbanetorget 1, 0154 Oslo</a>
-					</p>
+		<footer role="contentinfo" class="footnav invisible">
+			<section class="footer">
+				<div class="col_container">
+					<div class="col_1">
+						<h3>Contact us</h3>
+						<p>
+							<span id="footer-phone"><i class="fas fa-phone-alt" title="Give us a call"></i>+47 123 45 678</span><br>
+							<a href="mailto:#" title="Send us an e-mail"><i class="fas fa-envelope"></i>re@cycle.no</a><br>
+							<a href="https://goo.gl/maps/7y5r3mLvv85SsVQF7" title="Find us on Google Maps"><i class="fas fa-map-marker-alt"></i>Jernbanetorget 1, 0154 Oslo</a>
+						</p>
+					</div>
+					<div class="col_1">
+						<h3>General</h3>
+						<p>
+							<a href="./about.htm">About</a><br>
+							<a href="/">FAQ</a><br>
+							<a href="/">Terms &amp; conditions</a><br>
+							<a href="/">Privacy policy</a><br>
+						</p>
+					</div>
+					<div class="col_1">
+						<h3>Follow us</h3>
+						<p>
+							<a href="/" target="_blank" title="Follow us on Facebook"><i class="fab fa-facebook-square"></i></a>
+							<a href="/" target="_blank" title="Follow us on Instagram"><i class="fab fa-instagram"></i></a>
+							<a href="/" target="_blank" title="Follow us on LinkedIn"><i class="fab fa-linkedin"></i></a>
+						</p>
+					</div>
 				</div>
-				<div class="col_2">
-					<h4>General</h4>
-					<p>
-						<a href="about.htm">About</a><br>
-						<a href="#">FAQ</a><br>
-						<a href="#">Terms &amp; conditions</a><br>
-						<a href="#">Privacy policy</a><br>
-					</p>
-				</div>
-				<div class="col_3">
-					<h4>Follow us</h4>
-					<p>
-						<a href="#" target="_blank" title="Follow us on Facebook"><i class="fab fa-facebook-square"></i></a>
-						<a href="/" target="_blank" title="Follow us on Instagram"><i class="fab fa-instagram"></i></a>
-						<a href="/" target="_blank" title="Follow us on LinkedIn"><i class="fab fa-linkedin"></i></a>
-					</p>
-				</div>
-			</div>
-			<p id="copyright">Re-cycle &copy; 2019. Illustrations by <a href="https://www.freepik.com/katemangostar">katemangostar</a></p>
+				<p id="copyright">Re-cycle &copy; 2020. Illustrations by <a href="https://www.freepik.com/katemangostar">katemangostar</a></p>
+			</section>
 		</footer>
+		<script src="./js/fadein.js"></script>
+		<script src="./js/nav.js"></script>
+		<script src="./js/contact.js"></script>
 	</body>
 </html>
