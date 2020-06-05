@@ -375,6 +375,10 @@ footer .col_1 {
   flex-basis: auto;
 }
 
+iframe {
+  min-height: 400px;
+}
+
 /*Mobile
 ------------*/
 
@@ -823,10 +827,6 @@ header {
 
   .contact .row h2 {
     display: block;
-  }
-
-  .contact iframe {
-    height: 100%;
   }
 
   #contact_info span {
