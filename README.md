@@ -1,9 +1,8 @@
 # re-cycle
-Repository for a school project at Noroff, delivery September 1st 2019.
+Repository for course assignment in HTML&CSS. 
 
-This project was the course assignment in HTML and CSS.
-We were asked to make a four-page responsive website for a fictional company offering eco-friendly, guided cycling tours.
+Version 1, delivered September 2019:
+https://lybo.dev/htmlcss/ca-v1/
 
-The assignment was graded with a 9/10.
-
-Link to live site: https://thereselybo.github.io/re-cycle/
+Version 2, delivered June 2020:
+https://lybo.dev/htmlcss/ca-v2/
